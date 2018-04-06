@@ -1,23 +1,15 @@
 import { h, render, Component } from 'preact';
-//import './styles/base.scss'
+ import Header from './components/header/header'
 import './styles/reset.scss'
 /** @jsx h */
 
 
-class App extends Component {
-	state = {
-		text: 'hello!'
-	
-};
-	
+class App extends Component {	
 	render({}, { text }) {
 		return (
 			<app>
-				<header>
-					<h1>
-						{ text } Preact Home Page
-					</h1>
-				</header>
+				<Header />
+		
 			</app>
 		);
 	}
