@@ -1,8 +1,7 @@
-import {h,render,Component} from 'preact'
+import { h, render, Component } from 'preact'
 import style from './header.scss'
-export class Header extends Component{
+export default class Header extends Component{
     constructor(props){
-	
         super();
         this.state = {
             header:[{
@@ -26,16 +25,18 @@ export class Header extends Component{
             isClick : false
         }
     }
-    render({},{header}){
+
+    render({},{}){
         return(
 		
-            <div className = "header-containner">
+            <div className = "header-containner" ref = {(header)=>{
+                this.header = header;
+            }}>
                 <div className = "header-logo"></div>
                 <div className = "header-title">木犀官网</div>
-                <div className = "header-triangle"></div>
-			
+                <div className = "header-triangle"></div>		
             </div>
-			
+ 
         )
     }
 

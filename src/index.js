@@ -1,5 +1,5 @@
-import { h, render, Component } from 'preact';
- import Header from './components/header/header'
+import { h, render, Component } from 'preact'
+import Header from './components/header/header'
 import './styles/reset.scss'
 /** @jsx h */
 
