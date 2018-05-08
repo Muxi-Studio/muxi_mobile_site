@@ -3,12 +3,8 @@ import style from './products.scss'
 export default class Products extends Component{
     constructor(props){
         super();
-        // this.setViewPortRef = element => {
-        //     this.viewPort = element;
-        // }
         this.state = {
-            countPage : props.countPage,
-            currentPage: 0,
+          
         }
     }
    
@@ -46,27 +42,11 @@ export default class Products extends Component{
     }
     
     render({},{}){
-        let height = this.state.countPage * 100 + '%';
-        let indexArray = Array.from(
-            new Array(this.state.countPage),
-            (val,index) => index
-        )
         // 输出[0,1,2..,n-1]
 
-        return(
-                    
-        <div id="viewport" class="viewport"
-            ref = {this.setViewPortRef}
-            onTouchStart = {this.handleTouchStart.bind(this)}
-            onTouchMove = {this.handleTouchMove.bind(this)}
-            style = {{
-                height: height,
-                width: 100+"vw",
-                transitionDuration: ".8s",
-                top: -100 * this.state.currentPage + "%"
-            }}
-        >
-        
+        return(         
+        <div className = 'products-item'>
+
         </div> 
         )
     }

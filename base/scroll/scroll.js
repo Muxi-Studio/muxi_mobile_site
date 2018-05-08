@@ -1,23 +1,11 @@
 import { h, render, Component } from 'preact'
-import style from './products.scss'
-export default class Products extends Component{
+export default class Scroll extends Component{
     constructor(props){
         super();
-        // this.setViewPortRef = element => {
-        //     this.viewPort = element;
-        // }
         this.state = {
             countPage : props.countPage,
             currentPage: 0,
         }
-    }
-   
-    // componentDidMount(){
-    //    // window.addEventListener('scroll',this.handleTouchStart);
-    //    window.addEventListener('touchstart',this.handleTouchStart)
-    // }
-    componentWillUnmount(){
-        window.removeEventListener('scroll',this.handleTouchStart)
     }
     _chooseProduct = index => {
         this.setState({
@@ -32,7 +20,6 @@ export default class Products extends Component{
         let event = e.touches[0];
         let  percentage = (this.state.touchStart - event.clientY) / window.screen.height;
         if(percentage > 0) {
-        //    // console.log('down'+percentage)
         let page = this.state.currentPage + 1;
             this.setState({
                 currentPage:page
