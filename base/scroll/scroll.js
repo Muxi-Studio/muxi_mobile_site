@@ -5,33 +5,70 @@ export default class Scroll extends Component{
         this.state = {
             countPage : props.countPage,
             currentPage: 0,
+            transform:0,
+            touchStart: null,
+            dragThreshold:0.4,
+            percentage:0  
         }
     }
-    _chooseProduct = index => {
-        this.setState({
-            currentPage:index
-        })
-    }
+   
+
     handleTouchStart(e){
         e.preventDefault();
+        if(this.state.touchStart !== null) return;
         this.setState({touchStart:e.touches[0].clientY});
     }
     handleTouchMove(e){
+        if(this.state.touchStart === null) return;
         let event = e.touches[0];
-        let  percentage = (this.state.touchStart - event.clientY) / window.screen.height;
+        let percentage = (this.state.touchStart - event.clientY) / window.screen.height;
+        this.setState({percentage})
         if(percentage > 0) {
-        let page = this.state.currentPage + 1;
-            this.setState({
-                currentPage:page
-            })
+            let page  = this.state.currentPage + 1;
+            if(page>this.state.countPage){
+                page = this.state.currentPage
+            }else{
+                let transform = (1 - 0.4*percentage)*-100;
+                this.setState({
+                   transform
+                })
+
+            }
         } else if(percentage < 0) {
             let page = this.state.currentPage - 1;
-            this.setState({
-                currentPage:page
-            })
+            if(page<0){
+                page = 0
+            }else{
+                let transform = (1 - 0.4*percentage)*100;
+                this.setState({
+                   transform
+                })
+            }
         }
+        
     }
-    
+    handleTouchEnd() {
+        this.setState({touchStart:null,transform:0});
+        if(this.state.percentage >= this.state.dragThreshold) {
+            let page = this.state.currentPage + 1;
+                if(page>this.state.countPage){
+                    page = this.state.currentPage
+                }
+                this.setState({
+                    currentPage:page
+                })
+            } else if(Math.abs(this.state.percentage)>= this.state.dragThreshold) {
+                let page = this.state.currentPage - 1;
+                if(page<0){
+                    page = 0
+                }
+                this.setState({
+                    currentPage:page,
+                    percentage:0
+                })
+            }
+
+    }
     render({},{}){
         let height = this.state.countPage * 100 + '%';
         let indexArray = Array.from(
@@ -46,14 +83,17 @@ export default class Scroll extends Component{
             ref = {this.setViewPortRef}
             onTouchStart = {this.handleTouchStart.bind(this)}
             onTouchMove = {this.handleTouchMove.bind(this)}
+            onTouchEnd = {this.handleTouchEnd.bind(this)}
             style = {{
+                transform: "translateY("+this.state.transform+"px)",
+                position:"relative",
                 height: height,
                 width: 100+"vw",
                 transitionDuration: ".8s",
-                top: -100 * this.state.currentPage + "%"
+                top: -100 * this.state.currentPage + "vh"
             }}
         >
-        
+       {this.props.children}
         </div> 
         )
     }
