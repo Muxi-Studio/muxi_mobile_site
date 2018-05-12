@@ -1,5 +1,5 @@
 import { h, render, Component } from 'preact'
-import style from './header.scss'
+// import style from './header.scss'
 export default class Header extends Component{
     constructor(props){
         super();
@@ -27,15 +27,19 @@ export default class Header extends Component{
     }
 
     render({},{}){
+        console.log('into one')
         return(
+            <h1 style = "font-color:white">
+                我是第一页
+            </h1>
 		
-            <div className = "header-containner" ref = {(header)=>{
-                this.header = header;
-            }}>
-                <div className = "header-logo"></div>
-                <div className = "header-title">木犀官网</div>
-                <div className = "header-triangle"></div>		
-            </div>
+            // <div className = "header-containner" ref = {(header)=>{
+            //     this.header = header;
+            // }}>
+            //     <div className = "header-logo"></div>
+            //     <div className = "header-title">木犀官网</div>
+            //     <div className = "header-triangle"></div>		
+            // </div>
  
         )
     }

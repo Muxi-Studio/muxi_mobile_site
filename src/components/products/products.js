@@ -12,8 +12,9 @@ export default class Products extends Component{
         }
     }
     render({},{data}){
-        
-        return(     
+        console.log('into')
+        return(    
+        <app> 
         <Scroll countPage = {this.state.data.length}>
         {/* <div className = 'test'> */}
             {data.map((item,i)=>(
@@ -23,6 +24,7 @@ export default class Products extends Component{
             ))}    
       {/* </div> */}
       </Scroll>
+      </app>
         )
     }
 
