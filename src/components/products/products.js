@@ -8,16 +8,21 @@ export default class Products extends Component{
     constructor(props){
         super();
         this.state = {
-          data: info
+          currentDataIndex : 0,
+         
         }
     }
+    _changeData(changeIndex) {
+            this.setState({
+                currentDataIndex : currentDataIndex + changeIndex,
+            }) 
+    }
     render({},{data}){
-        console.log('into')
         return(    
         <app> 
-        <Scroll countPage = {this.state.data.length}>
+        <Scroll countPage = {this.state.data.length} _changeData = {changeIndex => this.changeData(changeIndex)}>
         {/* <div className = 'test'> */}
-            {data.map((item,i)=>(
+            {data[currentDataIndex].map((item,i)=>(
             <div className ={'test-inner test-inner'+i} >
                 <p> {item.intro} </p>
             </div>

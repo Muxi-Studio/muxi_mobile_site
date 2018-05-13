@@ -52,7 +52,7 @@ export default class Scroll extends Component{
         if(this.state.percentage >= this.state.dragThreshold) {
             let page = this.state.currentPage + 1;
                 if(page>this.state.countPage){
-                    page = this.state.currentPage
+                    this.props.changeData(1);
                 }
                 this.setState({
                     currentPage:page
@@ -60,7 +60,7 @@ export default class Scroll extends Component{
             } else if(Math.abs(this.state.percentage)>= this.state.dragThreshold) {
                 let page = this.state.currentPage - 1;
                 if(page<0){
-                    page = 0
+                    this.props.changeData(-1);
                 }
                 this.setState({
                     currentPage:page,
