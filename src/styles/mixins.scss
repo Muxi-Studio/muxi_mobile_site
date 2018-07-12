@@ -1,0 +1,7 @@
+@mixin relativeSize($height, $width) {
+  height: $height / 1230 * 100vh;
+  width: $width / 720 * 100vw;
+}
+@mixin relativeFontSize($width) {
+  font-size: $width / 720 * 100vw;
+}

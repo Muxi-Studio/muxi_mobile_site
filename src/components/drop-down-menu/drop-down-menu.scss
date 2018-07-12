@@ -1,0 +1,30 @@
+@import "../../styles/mixins.scss";
+.triangle {
+  @include relativeSize(5, 52);
+  background-color: white;
+  background-clip: content-box;
+  padding: 3 / 1230 * 100vh 0;
+  border-top: 5 / 1230 * 100vh solid white; //上边框
+  border-bottom: 5 / 1230 * 100vh solid white; //下边框
+}
+
+.drop-down-menu-container {
+  @include relativeSize(450, 720);
+  z-index: 999;
+  .drop-down-menu-ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    @include relativeFontSize(34);
+  }
+  .drop-down-menu-li {
+    padding: 5vh 0 0 5vw;
+    color: rgb(245, 251, 220);
+  }
+  a {
+    text-decoration: none;
+  }
+  .clicked {
+    color: rgb(233, 180, 17);
+  }
+}

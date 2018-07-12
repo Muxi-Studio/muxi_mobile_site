@@ -1,47 +1,36 @@
-import { h, render, Component } from 'preact'
-// import style from './header.scss'
-export default class Header extends Component{
-    constructor(props){
-        super();
-        this.state = {
-            header:[{
-				name: '组别介绍',
-				style: 'header-primary',
-				route: '/intro'
-			},
-			{
-				name: '产品展示',
-				style: 'header-primary',
-				route: '/product'
-			},{
-				name: '成员介绍',
-				style: 'header-primary',
-				route: '/member'
-			},{
-				name: '加入我们',
-				style: 'header-primary',
-				route: '/join'
-			}],
-            isClick : false
-        }
-    }
+import { h, render, Component } from "preact";
+import DropDownMenu from "../drop-down-menu/drop-down-menu";
+import style from "./header.scss";
 
-    render({},{}){
-        console.log('into one')
-        return(
-            <h1 style = "font-color:white">
-                我是第一页
-            </h1>
-		
-            // <div className = "header-containner" ref = {(header)=>{
-            //     this.header = header;
-            // }}>
-            //     <div className = "header-logo"></div>
-            //     <div className = "header-title">木犀官网</div>
-            //     <div className = "header-triangle"></div>		
-            // </div>
- 
-        )
-    }
-
+ // "lint": "./node_modules/.bin/eslint .js ./src --fix",
+    // "precommit": "npm run lint && pretty-quick --staged"
+export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "首页"
+    };
+  }
+  _handleChildChoose(title) {
+    this.setState({
+      title
+    });
+  }
+  render({}, { title }) {
+    return (
+      <div
+        style={style}
+        className="header-container"
+        onChoose={this._handleChildChoose.bind(this, title)}
+      >
+        <div className="header-logo">
+          <div className="header-logo-pic" />
+        </div>
+        <div className="header-title"> {title}</div>
+        <div className="header-menu">
+          <DropDownMenu />
+        </div>
+      </div>
+    );
+  }
 }

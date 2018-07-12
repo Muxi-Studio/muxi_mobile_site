@@ -1,13 +1,37 @@
-.viewport{
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100vh;
+@import "../../styles/mixins.scss";
+.header-container {
+  background-color: rgb(32, 53, 60);
+  @include relativeSize(100, 720);
+  @include relativeFontSize(35);
+  color: white;
+  display: flex;
+  text-align: center;
+  .header-logo {
+    flex: 1;
+
+    // .header-logo-pic{
+    //     //background-image: url('../../../static/logo.png');
+
+    // }
+  }
+  .header-title {
+    flex: 1;
+  }
+  .header-menu {
+    flex: 1;
+  }
 }
-.pageview{
-    height: 100%;
-    width: 100%;
-}
+
+// .viewport{
+//     position: relative;
+//     top: 0;
+//     width: 100%;
+//     height: 100vh;
+// }
+// .pageview{
+//     height: 100%;
+//     width: 100%;
+// }
 
 // @import '../../styles/base.scss';
 // @import '../../styles/color.scss';
