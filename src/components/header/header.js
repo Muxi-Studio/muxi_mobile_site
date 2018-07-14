@@ -8,7 +8,8 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "首页"
+      title: "首页",
+      open: false,
     };
   }
   _handleChildChoose(title) {
@@ -16,8 +17,14 @@ export default class Header extends Component {
       title
     });
   }
+  _handleClickMenu() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
   render({}, { title }) {
     return (
+      <div >
       <div
         style={style}
         className="header-container"
@@ -26,10 +33,13 @@ export default class Header extends Component {
         <div className="header-logo">
           <div className="header-logo-pic" />
         </div>
-        <div className="header-title"> {title}</div>
-        <div className="header-menu">
-          <DropDownMenu />
+          <div className="header-title"> {title} </div>
+          <div className="header-menu">
+          <div className="triangle" onClick={this._handleClickMenu.bind(this)}></div>
         </div>
+       
+      </div>
+      {this.state.open && <DropDownMenu onChoose = {this._handleChildChoose.bind(this,title)} />}
       </div>
     );
   }

@@ -12,22 +12,16 @@ export default class DropDownMenu extends Component {
       current: 0
     };
   }
-  _handleClickMenu() {
-    this.setState({
-      open: !this.state.open
-    });
-  }
   _handleClickItem(index) {
     this.setState({
       current: index
     });
     this.props.onChoose(this.state.baseInfo[index].name);
   }
-  render({}, { baseInfo, current }) {
+  render({ }, { baseInfo, current }) {
     return (
       <div style={style}>
-        <div className="triangle" onClick={this._handleClickMenu.bind(this)} />
-        {this.state.open && (
+      
           <div className="drop-down-menu-container">
             <ul className="drop-down-menu-ul">
               {baseInfo.map((item, index) => {
@@ -37,7 +31,7 @@ export default class DropDownMenu extends Component {
                     <li
                       className={`drop-down-menu-li ${
                         index === current ? "clicked" : ""
-                      }`}
+                        }`}
                       onClick={this._handleClickItem.bind(this, index)}
                     >
                       {item.name}
@@ -47,10 +41,8 @@ export default class DropDownMenu extends Component {
               })}
             </ul>
           </div>
-        )}
-      </div>
-    );
-  }
+     </div>
+    )}
 }
 
 DropDownMenu.propTypes = {

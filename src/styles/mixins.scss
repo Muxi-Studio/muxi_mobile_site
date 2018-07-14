@@ -5,3 +5,9 @@
 @mixin relativeFontSize($width) {
   font-size: $width / 720 * 100vw;
 }
+
+@mixin relativePosition($position,$left, $top) {
+  position: $position;
+  left: $left / 720 * 100vw;
+  top: $top / 1230 * 100vh;
+}

@@ -6,22 +6,34 @@
   color: white;
   display: flex;
   text-align: center;
+  line-height: 100 / 1230 * 100vh;
   .header-logo {
     flex: 1;
 
-    // .header-logo-pic{
-    //     //background-image: url('../../../static/logo.png');
+    .header-logo-pic{
+        background-image: url('http://localhost:3000/static/logo.png');
 
-    // }
+    }
   }
   .header-title {
     flex: 1;
   }
   .header-menu {
     flex: 1;
+   
   }
 }
 
+.triangle {
+  @include relativeSize(5, 52);
+  display: inline-block;
+  margin: 0 auto;
+  background-color: white;
+  background-clip: content-box;
+  padding: 3 / 1230 * 100vh 0;
+  border-top: 5 / 1230 * 100vh solid white; //上边框
+  border-bottom: 5 / 1230 * 100vh solid white; //下边框
+}
 // .viewport{
 //     position: relative;
 //     top: 0;

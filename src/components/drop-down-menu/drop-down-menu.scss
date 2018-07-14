@@ -12,13 +12,13 @@
   @include relativeSize(450, 720);
   z-index: 999;
   .drop-down-menu-ul {
-    height: 100%;
-    width: 100%;
+    @include relativeSize(450, 720);
     list-style: none;
+    @include relativePosition(absolute, 30 , 100);
     @include relativeFontSize(34);
   }
   .drop-down-menu-li {
-    padding: 5vh 0 0 5vw;
+    padding: 4vh 0 0 5vw;
     color: rgb(245, 251, 220);
   }
   a {
