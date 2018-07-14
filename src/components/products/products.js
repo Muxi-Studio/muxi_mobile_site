@@ -1,34 +1,49 @@
 import { h, render, Component } from "preact";
 import style from "./products.scss";
-import info from "./product-info";
 import Scroll from "../../../base/scroll/scroll";
 
 export default class Products extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
-      currentDataIndex: 0
+      currentDataIndex: 0,
+      // data: props.data
     };
   }
   _changeData(changeIndex) {
-    this.setState({
-      currentDataIndex: currentDataIndex + changeIndex
-    });
+    let currentDataIndex = this.state.currentDataIndex + changeIndex
+    this.setState({ currentDataIndex });
+   
   }
-  render({}, { data }) {
+  _changePage(index) {
+    this.props.appChangePage(index);
+  }
+  render({data}, {  }) {
     return (
       <app>
         <Scroll
-          countPage={this.state.data.length}
-          _changeData={changeIndex => this.changeData(changeIndex)}
+          countPage = {data.length}
+          changeData = {this._changeData.bind(this)}
+          changePage = {this._changePage.bind(this)}
         >
-          {/* <div className = 'test'> */}
+          {data.map((p)=>{
+          return( <div className = "test-inner">
+            {p.product}
+           </div>
+          )
+         })}
+        
+         
+        
+            
+           
+{/*           
           {data[currentDataIndex].map((item, i) => (
             <div className={"test-inner test-inner" + i}>
               <p> {item.intro} </p>
             </div>
-          ))}
-          {/* </div> */}
+          ))} */}
+         
         </Scroll>
       </app>
     );

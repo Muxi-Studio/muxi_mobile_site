@@ -46,19 +46,30 @@ export default class Scroll extends Component {
     }
   }
   handleTouchEnd() {
+   
     this.setState({ touchStart: null, transform: 0 });
     if (this.state.percentage >= this.state.dragThreshold) {
       let page = this.state.currentPage + 1;
-      if (page > this.state.countPage) {
+     
+      // if (page > this.state.countPage) {
+       
+      //   this.props.changeData(1);
+      // }
+      
+      if( page < this.state.countPage) {
         this.props.changeData(1);
+      } else  {
+        this.props.changePage(1);
       }
       this.setState({
         currentPage: page
       });
     } else if (Math.abs(this.state.percentage) >= this.state.dragThreshold) {
       let page = this.state.currentPage - 1;
-      if (page < 0) {
+      if (page > 0) {
         this.props.changeData(-1);
+      } else {
+        this.props.changePage(-1);
       }
       this.setState({
         currentPage: page,

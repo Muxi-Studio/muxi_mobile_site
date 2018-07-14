@@ -39,7 +39,7 @@ export default class Header extends Component {
         </div>
        
       </div>
-      {this.state.open && <DropDownMenu onChoose = {this._handleChildChoose.bind(this,title)} />}
+      {this.state.open && <DropDownMenu onChoose = {this._handleChildChoose} />}
       </div>
     );
   }
