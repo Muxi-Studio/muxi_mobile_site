@@ -1,0 +1,53 @@
+@import "../../../styles/base.scss";
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+$linear-border-width: 2px;
+.btn {
+    margin-top: 30px;
+    vertical-align: middle;
+    @include relativeSize(62,152);
+    @include relativeFontSize(30);
+    box-sizing: border-box;
+    color: $txt-color;
+    position: relative;
+ 
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      @include relativeSize(62,152);
+      border-left: $linear-border-width solid $linear-yellow;
+      border-right: $linear-border-width solid $linear-green;
+      box-sizing: border-box;
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% $linear-border-width;
+      background-image: linear-gradient(
+           to right,
+           $linear-yellow 0%,
+           $linear-green 100%
+         ),
+         linear-gradient(to right, $linear-yellow 0%, $linear-green 100%);
+    }
+    text-align: center;
+    p {
+      position: relative;
+      top: 50%;
+      height: 100%;
+      transform: translateY(-25%);
+    }
+  
+}
+.btn-hover{
+     background-image: linear-gradient(
+      to right,
+      $linear-yellow,
+      $linear-green
+    );
+  
+    cursor: pointer;
+    color: $bg-color;
+   
+}
+
