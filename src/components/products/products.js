@@ -20,6 +20,7 @@ export default class Products extends Component {
     this.props.appChangePage(index);
   }
   render({data}, {  }) {
+   
     return (
       <app style={style}>
         <Scroll
