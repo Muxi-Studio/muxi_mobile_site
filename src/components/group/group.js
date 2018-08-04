@@ -29,8 +29,16 @@ export default class Group extends Component {
              >
              {data.map((g) => {
                  return (   
-                    <div className = "groups-innercontainer">             
-                    <div className = "group">{g.name}</div>
+                    <div className = "groups-innercontainer">   
+                        <div className = "group-picture-containner">
+                            <div className = "group-picture"></div>
+                        </div>          
+                    <div className = "group-name">{g.name}</div>
+                    <div className = "group-intro">{g.intro}</div>
+                    <div className = "group-learn">
+                        学习技能：<br />
+                        {g.learn}                    
+                    </div>
                     </div>
                  )
              })}
