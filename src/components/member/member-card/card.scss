@@ -1,0 +1,13 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+.intro_card_photo{
+    display: block;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    // position: relative;
+    // top: 25px;
+    // left: 50%;
+    // @include transingle(translateX(-50%));
+    // background-size: contain;
+}
