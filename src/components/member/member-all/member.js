@@ -43,22 +43,21 @@ export default class Member extends Component {
         return scrollHeight;
     }
     handleTouchEnd() {
-        if(this.getScrollHeight == this.getWindowHeight + this.getDocumentTop){
+        
+        if(this.getScrollHeight() == this.getWindowHeight() + this.getDocumentTop()){
            alert('end');
         }
     
     }
     render({data},{}) {
-       
-
         return (
-            <app style = {style} >
+            <div style = {style} >
                  <div
-                    className="members_containenr"
-                    ref={this.members_containenr}
+                    className="members_containner"
+                    // ref={this.members_containenr}
                     // onTouchStart={this.handleTouchStart.bind(this)}
                     // onTouchMove={this.handleTouchMove.bind(this)}
-                    onTouchEnd={this.handleTouchEnd.bind(this)}
+                    //onTouchEnd={this.handleTouchEnd.bind(this)}
                 >
                   
    
@@ -75,7 +74,7 @@ export default class Member extends Component {
                     
                 })}
                </div>
-            </app>
+            </div>
         )
     }
     

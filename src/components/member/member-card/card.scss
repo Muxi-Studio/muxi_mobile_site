@@ -1,5 +1,8 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/colors.scss";
+.intro_card{
+    overflow:auto;
+}
 .intro_card_photo{
     display: block;
     height: 130px;
