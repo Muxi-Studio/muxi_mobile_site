@@ -66,8 +66,10 @@ export default class Member extends Component {
                     
                     return(
                     <div>
-                        <img className = "group_logo" src = {m.logo} />
-                        <div className = "group_name">{m.tag}组 </div>
+                        <div className = "group_intro" >
+                            <img className = "group_logo" src = {m.logo} />
+                            <div className = "group_name">{m.tag}组成员 </div>
+                        </div>
                         <CardBlock info = {m.people} tag = {m.tag} />
                     </div>
                     )
