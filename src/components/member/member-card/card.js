@@ -10,18 +10,18 @@ export default class Card extends Component {
     }
     render(props){
         return (
-        <app style = {style}>
+        <div style = {style}>
             <div className = "intro_card" >
-                {/* <div className = "intro_card_photo_containner"> */}
+                <div className = "intro_card_photo_containner">
                     <img className ="intro_card_photo"
                         src = {props.info.photo}
                         
                     />
-                {/* </div> */}
+                </div>
                 <div className = "intro_card_name">姓名:{props.info.name}</div>
                 <div className = "intro_card_introduction">座右铭：{props.info.intro}</div>
             </div>
-        </app>
+        </div>
         )
     }
 

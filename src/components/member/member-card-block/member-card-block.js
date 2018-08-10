@@ -11,7 +11,7 @@ export default class CardBlock extends Component {
     }
     render({ info }, { }) {
         return (
-            <div style={style}>
+            <div style={style} >
                 {info.map((people) => {
                     return (<div className='card_block'>
                         <div className = "member_year_containner">

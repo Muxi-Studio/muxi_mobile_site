@@ -43,8 +43,13 @@ export default class Member extends Component {
         return scrollHeight;
     }
     handleTouchEnd() {
+        console.log('scrollHeight:'+this.getScrollHeight())
+        console.log('windowHeight:'+this.getWindowHeight() );
+        console.log('height:'+ this.getDocumentTop())
         
-        if(this.getScrollHeight() == this.getWindowHeight() + this.getDocumentTop()){
+        let height = this.getWindowHeight() + this.getDocumentTop();
+        console.log(height)
+        if(this.getScrollHeight() <= height ){
            alert('end');
         }
     
@@ -54,10 +59,10 @@ export default class Member extends Component {
             <div style = {style} >
                  <div
                     className="members_containner"
-                    // ref={this.members_containenr}
+                    ref={this.members_containenr}
                     // onTouchStart={this.handleTouchStart.bind(this)}
                     // onTouchMove={this.handleTouchMove.bind(this)}
-                    //onTouchEnd={this.handleTouchEnd.bind(this)}
+                    onTouchEnd={this.handleTouchEnd.bind(this)}
                 >
                   
    
@@ -65,16 +70,22 @@ export default class Member extends Component {
                 {data.map((m)=>{
                     
                     return(
-                    <div>
+                    <div className = 'group_intro_containner'>
                         <div className = "group_intro" >
                             <img className = "group_logo" src = {m.logo} />
                             <div className = "group_name">{m.tag}组成员 </div>
                         </div>
                         <CardBlock info = {m.people} tag = {m.tag} />
                     </div>
+                 
                     )
                     
                 })}
+               </div>
+               <div className  = 'members_over'>
+                  <div className = 'member_over_dot'></div>
+                  <div className = 'over_words'>未完待续</div>
+                 
                </div>
             </div>
         )

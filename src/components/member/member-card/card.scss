@@ -7,16 +7,23 @@
     @include relativeSize(227,190);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    //align-items: center;
     margin-left: 25 / 750 * 100vw;
     padding: 15px 13 / 750 * 100vw;
 }
+.intro_card_photo_containner{
+   
+    height: 120 / 1230 *100vh;
+   
+    margin: 0 auto;
+}
 .intro_card_photo{
+    @include relativeSize(112,114);
     display: block;
     // height: 130px;
     // width: 130px;
-    @include relativeSize(112,114);
+    
     border-radius: 50%;
     // position: relative;
     // top: 25px;
@@ -25,9 +32,10 @@
     // background-size: contain;
 }
 .intro_card_name{
-    margin-top: 9px;
+    margin-top: 9 / 1230 *100vh;
 }
 
 .intro_card_introduction{
-    margin-top: 11px;
+    margin-top: 11 / 1230 *100vh;
+  
 }

@@ -306,49 +306,46 @@ export default
               photo: "http://ourrzxc82.bkt.clouddn.com//product/linwenya.png",
               intro: "好的产品应是连接人并让其产生更多可能",
             },
+          ]
+        },
+        {
+          year: 2016,
+          member: [
             {
-              year: 2016,
-              member: [
-                {
-                  position: "组长",
-                  name: "杨哲盈",
-                  photo: "http://ourrzxc82.bkt.clouddn.com//product/yangzheying.jpg",
-                  intro: "自我差别化  随心不逐流",
-                },
-                {
-                  position: "组员",
-                  name: "王涵",
-                  photo: "http://ourrzxc82.bkt.clouddn.com//product/wanghan.jpg",
-                  intro: "明日池塘是绿茵",
-                },
-                {
-                  position: "组员",
-                  name: "陈雅澜",
-                  photo: "http://ourrzxc82.bkt.clouddn.com//product/chenyalan.jpg",
-                  intro: "Only the paraniod survived. ",
+              position: "组长",
+              name: "杨哲盈",
+              photo: "http://ourrzxc82.bkt.clouddn.com//product/yangzheying.jpg",
+              intro: "自我差别化  随心不逐流",
+            },
+            {
+              position: "组员",
+              name: "王涵",
+              photo: "http://ourrzxc82.bkt.clouddn.com//product/wanghan.jpg",
+              intro: "明日池塘是绿茵",
+            },
+            {
+              position: "组员",
+              name: "陈雅澜",
+              photo: "http://ourrzxc82.bkt.clouddn.com//product/chenyalan.jpg",
+              intro: "Only the paraniod survived. ",
 
-                }
-
-
-              ]
-
-            }, {
-              year: 2017,
-              member: [
-                {
-                  position: "组员",
-                  name: "贺庆玲",
-                  photo: "http://ourrzxc82.bkt.clouddn.com//product/heqingling.jpg",
-                  intro: "很多失败不是因为能力有限，而是因为没有坚持到底",
-                }
-              ]
             }
           ]
-
-
         },
+        {
+          year: 2017,
+          member: [
+            {
+              position: "组员",
+              name: "贺庆玲",
+              photo: "http://ourrzxc82.bkt.clouddn.com//product/heqingling.jpg",
+              intro: "很多失败不是因为能力有限，而是因为没有坚持到底",
+            }
+          ]
+        }
       ]
     },
+
     {
       tag: "安卓",
       people: [
@@ -386,18 +383,19 @@ export default
           ]
         }, {
           year: 2016,
-          member: [{
-            position: "组长",
-            name: "石泽远",
-            photo: "http://ourrzxc82.bkt.clouddn.com//android/shizeyuan.jpg",
-            intro: "YOU ARE NOT BRAVE, MAN ARE BRAVE",
-          },
-          {
-            position: "组员",
-            name: "夏玮蔚",
-            photo: "http://ourrzxc82.bkt.clouddn.com//android/xiaweiwei.jpg",
-            intro: "这个人很懒，还没有自己的简介哦～",
-          },]
+          member: [
+            {
+              position: "组长",
+              name: "石泽远",
+              photo: "http://ourrzxc82.bkt.clouddn.com//android/shizeyuan.jpg",
+              intro: "YOU ARE NOT BRAVE, MAN ARE BRAVE",
+            },
+            {
+              position: "组员",
+              name: "夏玮蔚",
+              photo: "http://ourrzxc82.bkt.clouddn.com//android/xiaweiwei.jpg",
+              intro: "这个人很懒，还没有自己的简介哦～",
+            },]
         },
         {
           year: 2017,

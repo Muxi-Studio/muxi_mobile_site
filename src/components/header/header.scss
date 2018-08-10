@@ -1,5 +1,7 @@
 @import "../../styles/mixins.scss";
 .header-container {
+  position: fixed;
+  top: 0;
   background-color: rgb(32, 53, 60);
   @include relativeSize(100, 720);
   @include relativeFontSize(35);
