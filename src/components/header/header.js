@@ -13,6 +13,7 @@ export default class Header extends Component {
     };
   }
   _handleChildChoose(title) {
+    this.props.changeComponent(title);
     this.setState({
       title
     });

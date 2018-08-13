@@ -11,29 +11,31 @@
   align-items:center;
 }
 .product-img-containner{
-  flex:730/1129;
+  flex:730;
 }
 .product-img{
   @include relativeSize(596, 618);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  //background-image: url("../../../static/product-xiazi.png");
+  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/product-xiazi.png");
 }
 .product-center-intro{
-  flex:172/1129;
+  flex:172;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
 }
 .product-name{
+  margin-top:26 / 1230 * 100vh;
   @include relativeFontSize(47);
   font-weight: 800;
   color: rgb(245,251,220);
 }
 
 .product-type-containner{
+  margin-top:6 / 1230 * 100vh;
   display: flex;
   flex-direction: row;
   justify-content:center;
@@ -49,6 +51,8 @@
 
 }
 .product-intro{
+  margin-top:10 / 1230 * 100vh;
   color: rgb(245,251,220);
+  width: 481 / 750 * 100vw;
   @include relativeFontSize(24);
 }

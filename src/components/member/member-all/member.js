@@ -43,14 +43,16 @@ export default class Member extends Component {
         return scrollHeight;
     }
     handleTouchEnd() {
-        console.log('scrollHeight:'+this.getScrollHeight())
-        console.log('windowHeight:'+this.getWindowHeight() );
-        console.log('height:'+ this.getDocumentTop())
+        
+        console.log(this.getScrollHeight());
+        console.log(this.getWindowHeight() + this.getDocumentTop())
         
         let height = this.getWindowHeight() + this.getDocumentTop();
-        console.log(height)
+       
         if(this.getScrollHeight() <= height ){
-           alert('end');
+           this.props.appChangePage(1);
+        }else if(document.body.scrollTop==0&&document.documentElement.scrollTop==0){
+            this.props.appChangePage(-1);
         }
     
     }
