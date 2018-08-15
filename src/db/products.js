@@ -19,8 +19,7 @@ export default
     {
     product: "木小犀",
     type: "Web应用",
-    intro:
-        "当Siri来到华师，它便是木小犀。无论你是遇到了难题还是空闲无聊，木小犀都能一呼即到。",
+    intro: "当Siri来到华师，它便是木小犀。无论你是遇到了难题还是空闲无聊，木小犀都能一呼即到。",
     href: "http://robot.muxixyz.com",
     img: "https://occc3ev3l.qnssl.com/index_site/product-muxiaoxi-new.png",
     icon: "https://occc3ev3l.qnssl.com/index_site/icon_robot.png"

@@ -30,7 +30,7 @@ export default class Products extends Component {
         >
           {data.map((p)=>{
             let linkWord =  p.type === "Web应用" ? "进入链接" : "下载应用";
-
+          
           return( 
 
           <div className = "products-innercontainer">

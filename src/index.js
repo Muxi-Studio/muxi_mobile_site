@@ -34,9 +34,10 @@ class App extends Component {
   }
   render({}, { currentPage }) {
     let TempComponent = allPageComponents[currentPage];
+    console.log(currentPage)
     return (
       <app>
-         {this.state. currentPage !== 0 ? <Header />:""}
+         {this.state. currentPage !== 0 ? <Header title = {allTitles[currentPage]}/>:""}
         
         <TempComponent  appChangePage = {this._onChangePage.bind(this)}  data = {allInfo[currentPage]}/>
         {/* <Members data = {allInfo[2]} /> */}

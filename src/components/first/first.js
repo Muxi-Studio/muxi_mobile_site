@@ -5,7 +5,7 @@ export default class First extends Component {
     super();
   }
   intoMuxi() {
-    console('in')
+    
     this.props.appChangePage(1);
   }
   render({}, {}) {
@@ -28,7 +28,7 @@ export default class First extends Component {
 
           <div className="first-border" />
         </div>
-        <div className="first-button" onPress={this.intoMuxi.bind(this)}>
+        <div className="first-button" onTouchEnd={this.intoMuxi.bind(this)}>
           <button class="blob-btn">
             进&nbsp;入&nbsp;官&nbsp;网
             <span class="blob-btn__inner">

@@ -12,6 +12,14 @@ export default class Header extends Component {
       open: false,
     };
   }
+  componentWillMount() {
+    console.log(this.props.title)
+    this.setState({title:this.props.title})
+  }
+  // componentWillReceiveProps(props) {
+   
+  //   this.setState({title:props.title})
+  // }
   _handleChildChoose(title) {
     this.props.changeComponent(title);
     this.setState({

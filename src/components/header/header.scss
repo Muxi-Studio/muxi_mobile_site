@@ -1,5 +1,6 @@
 @import "../../styles/mixins.scss";
 .header-container {
+  z-index: 999;
   position: fixed;
   top: 0;
   background-color: rgb(32, 53, 60);
@@ -27,14 +28,25 @@
 }
 
 .triangle {
-  @include relativeSize(5, 52);
+  @include relativeSize(20, 52);
   display: inline-block;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(253,255,220);
   background-clip: content-box;
   padding: 3 / 1230 * 100vh 0;
-  border-top: 5 / 1230 * 100vh solid white; //上边框
-  border-bottom: 5 / 1230 * 100vh solid white; //下边框
+  border-top: 5 / 1230 * 100vh solid rgb(253,255,220); 
+  border-bottom: 5 / 1230 * 100vh solid rgb(253,255,220); 
+
+
+  // height: 5px;
+  // width: 53px;
+  // background-color:blue;
+  // display: inline-block; 
+  // margin: 0 auto;
+  //  background-clip: content-box; 
+  //  padding: 3px 0; 
+  //  border-top: 5px solid blue;  
+  // border-bottom: 5px solid blue; 
 }
 // .viewport{
 //     position: relative;
