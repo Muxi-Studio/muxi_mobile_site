@@ -12,10 +12,23 @@ export default class DropDownMenu extends Component {
       current: 0
     };
   }
+  componentWillMount() {
+    let i =  this.state.baseInfo.findIndex((item)=>{
+      return item.name === this.props.title;
+    })
+    this.setState({current: i});
+  }
+  componentWillReceiveProps(props) {
+   let i =  this.state.baseInfo.findIndex((item)=>{
+      return item.name === props.title;
+    })
+    this.setState({current: i});
+  }
   _handleClickItem(index) {
     this.setState({
       current: index
     });
+  
     this.props.onChoose(this.state.baseInfo[index].name);
   }
   render({ }, { baseInfo, current }) {
@@ -26,8 +39,8 @@ export default class DropDownMenu extends Component {
             <ul className="drop-down-menu-ul">
               {baseInfo.map((item, index) => {
                 return (
-                  <a href={item.router}>
-                    {" "}
+                  <a>
+                    {/* {" "} */}
                     <li
                       className={`drop-down-menu-li ${
                         index === current ? "clicked" : ""

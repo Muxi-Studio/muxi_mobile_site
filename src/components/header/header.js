@@ -16,19 +16,22 @@ export default class Header extends Component {
     console.log(this.props.title)
     this.setState({title:this.props.title})
   }
-  // componentWillReceiveProps(props) {
+  componentWillReceiveProps(props) {
    
-  //   this.setState({title:props.title})
-  // }
+    this.setState({title:props.title})
+  }
   _handleChildChoose(title) {
+    let openStatus = !this.state.open;
+    this.setState({open:openStatus});
     this.props.changeComponent(title);
     this.setState({
       title
     });
   }
   _handleClickMenu() {
+    let openStatus = !this.state.open;
     this.setState({
-      open: !this.state.open
+      open: openStatus
     });
   }
   render({}, { title }) {
@@ -37,7 +40,7 @@ export default class Header extends Component {
       <div
         style={style}
         className="header-container"
-        onChoose={this._handleChildChoose.bind(this, title)}
+        // onChoose={this._handleChildChoose.bind(this, title)}
       >
         <div className="header-logo">
           <div className="header-logo-pic" />
@@ -48,7 +51,7 @@ export default class Header extends Component {
         </div>
        
       </div>
-      {this.state.open && <DropDownMenu onChoose = {this._handleChildChoose} />}
+      {this.state.open && <DropDownMenu onChoose = {this._handleChildChoose.bind(this)} title = {title} />}
       </div>
     );
   }

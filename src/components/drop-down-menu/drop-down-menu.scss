@@ -1,4 +1,5 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
 // .triangle {
 //   @include relativeSize(5, 52);
 //   background-color: white;
@@ -9,15 +10,19 @@
 // }
 
 .drop-down-menu-container {
-  @include relativeSize(450, 720);
-  z-index: 999;
+ 
+   position:fixed;
+   @include relativeSize(450, 720);
+    z-index: 9;
   .drop-down-menu-ul {
+    background-color: $bg-color;
     @include relativeSize(450, 720);
     list-style: none;
-    @include relativePosition(absolute, 30 , 100);
+    @include relativePosition(absolute, 0 , 100);
     @include relativeFontSize(34);
   }
   .drop-down-menu-li {
+   
     padding: 4vh 0 0 5vw;
     color: rgb(245, 251, 220);
   }

@@ -9,7 +9,8 @@
     color: $txt-color;
   }
   .group-picture-containner{
-    flex:683/1129;
+   
+  // margin-top:  / 1280 *100vh
   }
   .group-picture{
     @include relativeSize(630, 601);
@@ -20,15 +21,20 @@
 
   }
   .group-name{
+    margin-top: 15 / 1230 *100vh;
     @include relativeFontSize(47);
     font-weight: 800;
   
   }
   .group-intro{
-    @include relativeFontSize(37);
-  
+    width: 501 / 750 *100vw;
+    margin-top: 42 / 1230 *100vh;
+    @include relativeFontSize(32);
+    
   }
   .group-learn{
-    @include relativeFontSize(37);
+    width: 501 / 750 *100vw;
+    margin-top: 38 / 1230 *100vh;
+    @include relativeFontSize(32);
   
   }

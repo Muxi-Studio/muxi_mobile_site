@@ -36,7 +36,7 @@ export default class Group extends Component {
                     <div className = "group-name">{g.name}</div>
                     <div className = "group-intro">{g.intro}</div>
                     <div className = "group-learn">
-                        学习技能：<br />
+                        学习技能<br />
                         {g.learn}                    
                     </div>
                     </div>
