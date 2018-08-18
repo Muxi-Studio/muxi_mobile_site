@@ -1,4 +1,5 @@
 @import "../../styles/base.scss";
+@import "../../styles/mixins.scss";
 .first-button {
   position: relative;
   top: 50vh;
@@ -145,8 +146,8 @@ $borderW: 6px;
 .first {
   // margin: 0 auto;
   text-align: center;
-  width: 100%;
-  height: 700px;
+  width: 100vw;
+  height: 100vh;
   background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -155,13 +156,18 @@ $borderW: 6px;
 .first-cloud-cantainner {
   opacity: 1;
   position: absolute;
-  top: 167/700 * 100vh;
+  top: 167 / 700 * 100vh;
+  // @include relativeSize(113,720);
   width: 100vw;
-  height: 424px;
+  height: 113 / 1230 *100vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-left-cloud {
+ 
   @keyframes leftcloud {
     100% {
       transform: translateX(336/1280 * 100vw);
@@ -185,9 +191,9 @@ $borderW: 6px;
     0s,
     forwards
   );
-  width: 336/1280 * 100vw;
-  height: 424/700 * 100vh;
-  margin-left: -336/1280 * 100vw;
+  @include relativeSize(118,180);
+ 
+   margin-left: -336 / 1280 * 100vw;
   background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-left-clound-new.png");
   background-size: contain;
   background-position: center;
@@ -198,12 +204,12 @@ $borderW: 6px;
   left: 82vw;
   @keyframes rightcloud {
     100% {
-      transform: translateX(-50/1280 * 100vw);
+      transform: translateX(-50 / 1280 * 100vw);
     }
   }
   @-moz-keyframes rightcloud {
     100% {
-      -moz-transform: translateX(-50/1280 * 100vw);
+      -moz-transform: translateX(-50 / 1280 * 100vw);
     }
   }
   @-webkit-keyframes rightcloud {
@@ -234,7 +240,7 @@ $borderW: 6px;
   background-repeat: no-repeat;
   z-index: 9;
   position: absolute;
-  top: 30%;
+  top: 40%;
   @include transingle(translateY(-50%));
 }
 .first-center-trees-containner {

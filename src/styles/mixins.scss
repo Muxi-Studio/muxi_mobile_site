@@ -11,3 +11,9 @@
   left: $left / 720 * 100vw;
   top: $top / 1230 * 100vh;
 }
+@mixin anim($function, $staytime, $way, $time, $result) {
+  animation: $function $staytime $way $time $result;
+  -webkit-animation: $function $staytime $way $time $result;
+  -o-animation: $function $staytime $way $time $result;
+  -moz-animation: $function $staytime $way $time $result;
+}

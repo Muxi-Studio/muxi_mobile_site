@@ -15,7 +15,7 @@
    @include relativeSize(450, 720);
     z-index: 9;
   .drop-down-menu-ul {
-    background-color: $bg-color;
+    background-color: rgb(32,53,60);
     @include relativeSize(450, 720);
     list-style: none;
     @include relativePosition(absolute, 0 , 100);
