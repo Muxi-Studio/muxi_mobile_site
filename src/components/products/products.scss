@@ -15,11 +15,12 @@
   margin-top: 113 / 1280 *100vh
 }
 .product-img{
+
   @include relativeSize(596, 618);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/product-xiazi.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
+  // background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/product-xiazi.png");
 }
 .product-center-intro{
   // flex:150;
@@ -46,6 +47,9 @@
 }
 .product-type-logo{
   // flex:1
+  @include relativeSize(30,30);
+  margin-right: 20 / 750 *100vw;
+
 }
 .product-type{
   // flex: 6;

@@ -35,12 +35,12 @@ export default class Products extends Component {
 
           <div className = "products-innercontainer">
             <div className = "product-img-containner">
-              <div className = "product-img"> </div>
+              <img className = "product-img" src = {p.img}/> 
             </div>
             <div className = "product-center-intro">
               <div className = "product-name">{p.product}</div>
               <div className = "product-type-containner">
-                <div className = "product-type-logo"></div>
+                <img className = "product-type-logo" src = {"http://p9j8ahs4w.bkt.clouddn.com/mobile_site/product-type.png"} /> 
                 <div className = "product-type">{p.type}</div>
               </div>
               <div className = "product-intro">{p.intro}</div>

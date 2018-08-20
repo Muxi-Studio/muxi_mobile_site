@@ -43,16 +43,25 @@ export default class Member extends Component {
         return scrollHeight;
     }
     handleTouchEnd() {
-        
-        console.log(this.getScrollHeight());
-        console.log(this.getWindowHeight() + this.getDocumentTop())
+        // let scrollT = scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+        // let scrollH = document.documentElement.scrollHeight || document.body.scrollHeight;
+        // let clientH = document.documentElement.clientHeight || document.body.clientHeight;
+        // if (scrollT == scrollH - clientH) {
+        //     console.log("到底部了");
+        //     } else if (scrollT < scrollH - clientH) {
+        //     console.log("到顶了")
+        //     }
+        // console.log(this.getScrollHeight());
+        // console.log(this.getWindowHeight() + this.getDocumentTop())
         
         let height = this.getWindowHeight() + this.getDocumentTop();
        
         if(this.getScrollHeight() <= height ){
-           this.props.appChangePage(1);
+        //    this.props.appChangePage(1);
+        console.log('+1')
         }else if(document.body.scrollTop==0&&document.documentElement.scrollTop==0){
-            this.props.appChangePage(-1);
+            // this.props.appChangePage(-1);
+            console.log(-1)
         }
     
     }

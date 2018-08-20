@@ -31,7 +31,7 @@ export default class Group extends Component {
                  return (   
                     <div className = "groups-innercontainer">   
                         <div className = "group-picture-containner">
-                            <div className = "group-picture"></div>
+                            <img className = "group-picture" src = {g.img} />
                         </div>          
                     <div className = "group-name">{g.name}</div>
                     <div className = "group-intro">{g.intro}</div>
