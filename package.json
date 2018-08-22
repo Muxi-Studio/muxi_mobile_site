@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "ninja2 start",
-    "build": "node_modules/.bin/webpack --progress --config webpack.prod.config.js"
+    "build": "node_modules/.bin/webpack --progress --config build/webpack.prod.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
+    "extract-text-webpack-plugin": "^2.1.2",
     "husky-hg": "^0.15.2",
     "prettier": "^1.13.7",
     "pretty-quick": "^1.6.0"
@@ -28,7 +29,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-loader": "^0.5.1",
