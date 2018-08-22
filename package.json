@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "ninja2 start",
-    "build": "node_modules/.bin/webpack --progress --config build/webpack.prod.conf.js"
+    "build": " node ./build/build.js"
   },
   "keywords": [],
   "author": "",
