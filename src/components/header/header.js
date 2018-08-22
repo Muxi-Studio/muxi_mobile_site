@@ -43,7 +43,7 @@ export default class Header extends Component {
         // onChoose={this._handleChildChoose.bind(this, title)}
       >
         <div className="header-logo">
-          <div className="header-logo-pic" />
+          <img className="header-logo-pic" src = {"http://p9j8ahs4w.bkt.clouddn.com/mobile_site/logo.png"} />
         </div>
           <div className="header-title"> {title} </div>
           <div className="header-menu">

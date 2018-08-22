@@ -8,15 +8,17 @@
   @include relativeFontSize(35);
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 100 / 1230 * 100vh;
+  // line-height: 100 / 1230 * 100vh;
   .header-logo {
     flex: 1;
 
-    .header-logo-pic{
-        background-image: url('http://p9j8ahs4w.bkt.clouddn.com/mobile_site/logo.png');
+    // .header-logo-pic{
+    //     background-image: url('http://p9j8ahs4w.bkt.clouddn.com/mobile_site/logo.png');
 
-    }
+    // }
   }
   .header-title {
     flex: 1;
