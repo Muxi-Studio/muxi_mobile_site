@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ninja2 start",
     "build": " node ./build/build.js",
-    "start": "ninja2 start",
+    "start": "ninja2 start"
   },
   "keywords": [],
   "author": "",
