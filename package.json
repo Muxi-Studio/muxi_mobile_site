@@ -2,14 +2,14 @@
   "name": "muxi_mobile_site",
   "version": "1.0.1",
   "description": "",
-  "main": "./src/index.js",
+  "main": "ninja.conf.js",
   "scripts": {
     "dev": "ninja2 start",
     "build": " node ./build/build.js",
-    "start": " node node_modules/ninja_cli2/src/bin/ninja start"
+    "start": " node ./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "MFE",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^8.2.6",
