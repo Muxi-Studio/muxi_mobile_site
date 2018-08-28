@@ -5,8 +5,7 @@
   "main": "ninja.conf.js",
   "scripts": {
     "dev": "ninja2 start",
-    "build": " node ./build/build.js",
-    "start": " node ./src/index.js"
+    "build": "node ./build/build.js"
   },
   "keywords": [],
   "author": "MFE",
