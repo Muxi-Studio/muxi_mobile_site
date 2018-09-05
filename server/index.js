@@ -8,7 +8,7 @@ const compression = require("koa-compress");
 const router = new Router();
 const app = new Koa();
 
-const templateRoot = path.join(__dirname, "../dist");
+const templateRoot = path.join(__dirname, "../dist/templates");
 
 app.use(userAgent);
 app.use(compression());
