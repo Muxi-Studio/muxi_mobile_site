@@ -13,7 +13,7 @@ const templateRoot = path.join(__dirname, "../dist/templates");
 app.use(userAgent);
 app.use(compression());
 router.get(/^\/(.*)$/, ctx => { 
-    const template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+    const template = swig.compileFile(path.resolve(templateRoot, "home.html"));
     ctx.body = template({});
   
 });
