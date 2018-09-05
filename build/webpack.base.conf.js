@@ -20,7 +20,6 @@ module.exports = {
         path: path.join(__dirname, '../'),
         filename: '[name].js',
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath
-      
     },
    	module: {
         loaders: [
