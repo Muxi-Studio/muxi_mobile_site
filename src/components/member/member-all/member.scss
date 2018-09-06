@@ -47,7 +47,6 @@
 .over_words {
   @include relativeFontSize(25);
   color: $txt-color;
-  // justify-content: space-between;
 }
 .member_over_dot {
   width: 5px;

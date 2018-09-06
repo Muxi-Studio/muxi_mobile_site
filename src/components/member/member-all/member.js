@@ -65,17 +65,16 @@ export default class Member extends Component {
 
     if (this.getScrollHeight() <= height) {
       //    this.props.appChangePage(1);
-      console.log("+1");
+      //   console.log("+1");
     } else if (
       document.body.scrollTop == 0 &&
       document.documentElement.scrollTop == 0
     ) {
       // this.props.appChangePage(-1);
-      console.log(-1);
+      //   console.log(-1);
     }
   }
   handleImgError() {
-    console.log("error");
     this.img.src =
       "https://wx4.sinaimg.cn/mw690/006P0MECly1fouzomp40lj31hc0u011e.jpg";
   }
