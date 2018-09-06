@@ -1,31 +1,30 @@
-
 @import "../../styles/mixins.scss";
 .join-web {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .background-star {
- @include relativeSize(645,750);
- margin-top: 200 / 1230 * 100vh;
+  @include relativeSize(645, 750);
+  margin-top: 200 / 1230 * 100vh;
+  object-fit: contain;
 }
 .background-button {
-    margin-top: 80 / 1230 * 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @include relativeSize(60,177);
-    border-radius:5%;
-    cursor: pointer;
-    background: linear-gradient( to right,rgb(252,150,74),rgb(252,198,71));
+  margin-top: 80 / 1230 * 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include relativeSize(60, 177);
+  border-radius: 5%;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(252, 150, 74), rgb(252, 198, 71));
 }
 
-.join-words{
-    @include relativeFontSize(30);
-    color: rgb(253,253,253);
-    font-weight: 600;
-    
+.join-words {
+  @include relativeFontSize(30);
+  color: rgb(253, 253, 253);
+  font-weight: 600;
 }

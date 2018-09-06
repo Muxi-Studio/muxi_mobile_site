@@ -1,41 +1,41 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/colors.scss";
-.intro_card{
-    overflow: auto;
-    background-color: $member-card-bckground;
-    border-radius: 10%;
-    @include relativeSize(227,190);
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    //align-items: center;
-    margin-left: 25 / 750 * 100vw;
-    padding: 15px 13 / 750 * 100vw;
+.intro_card {
+  overflow: scroll;
+  text-overflow: ellipsis;
+  background-color: $member-card-bckground;
+  border-radius: 10%;
+  @include relativeSize(227, 190);
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  //align-items: center;
+  margin-left: 25 / 750 * 100vw;
+  padding: 10px 13 / 750 * 100vw;
+  //padding-bottom: 2vh;
 }
-.intro_card_photo_containner{
-   
-    height: 120 / 1230 *100vh;
-   
-    margin: 0 auto;
+// .intro_card_inner{
+//     margin-bottom: 2vh;
+// }
+.intro_card_photo_containner {
+  height: 120 / 1230 * 100vh;
+
+  margin: 0 auto;
 }
-.intro_card_photo{
-    @include relativeSize(112,114);
-    display: block;
-    // height: 130px;
-    // width: 130px;
-    
-    border-radius: 50%;
-    // position: relative;
-    // top: 25px;
-    // left: 50%;
-    // @include transingle(translateX(-50%));
-    // background-size: contain;
+.intro_card_photo {
+  @include relativeSize(112, 114);
+  display: block;
+
+  border-radius: 50%;
 }
-.intro_card_name{
-    margin-top: 9 / 1230 *100vh;
+.intro_card_name {
+  margin-top: 9 / 1230 * 100vh;
 }
 
-.intro_card_introduction{
-    margin-top: 11 / 1230 *100vh;
-  
+.intro_card_introduction {
+  // position: absolute;
+  // bottom: 2vh;
+  margin-top: 11 / 1230 * 100vh;
+  max-height: 30%;
+  overflow: scroll;
 }

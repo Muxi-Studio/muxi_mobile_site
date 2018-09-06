@@ -1,80 +1,71 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/colors.scss";
 @import "../../../styles/base.scss";
-.members_containner{
-    overflow-y: scroll;
-    overflow-x: auto; 
-    margin:160 /1230 * 100vh  32 / 720 * 100vw 0 0
+.members_containner {
+  overflow-y: scroll;
+  overflow-x: auto;
+  margin: 160 /1230 * 100vh 32 / 720 * 100vw 0 0;
   // margin-top: 160 /1230 * 100vh  ;
 }
-.group_intro_containner{
-    margin-bottom:  58 /1230 * 100vh;
+.group_intro_containner {
+  margin-bottom: 58 /1230 * 100vh;
 }
 .group_intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.group_logo{
-    flex: 1;
-    @include relativeSize(112,117)
+.group_logo {
+  flex: 1;
+  @include relativeSize(112, 117);
 }
-.group_name{
-    flex: 4;
-    @include relativeFontSize(35);
-    color:$txt-color;
-    font-weight:700;
-
-
+.group_name {
+  flex: 4;
+  @include relativeFontSize(35);
+  color: $txt-color;
+  font-weight: 700;
 }
-.group_name::after{
-    display: block;
-    content:" ";
-    @include relativeSize(15,199);
-    background-color:rgba(159, 195,217,0.5);
-    position: relative;
-    top: -5px;
-    left: -2px;
+.group_name::after {
+  display: block;
+  content: " ";
+  @include relativeSize(15, 199);
+  background-color: rgba(159, 195, 217, 0.5);
+  position: relative;
+  top: -5px;
+  left: -2px;
 }
-.members_over{
-  
-    position: relative;
-    top:  55 / 1230 * 100vh;
-    left: 32 / 720 * 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.members_over {
+  position: relative;
+  top: -30 / 1230 * 100vh;
+  left: 32 / 720 * 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.over_words{
-
-  
-   @include relativeFontSize(25);
-   color:$txt-color;
-   // justify-content: space-between;
-    
-
+.over_words {
+  @include relativeFontSize(25);
+  color: $txt-color;
+  // justify-content: space-between;
 }
 .member_over_dot {
-   
-    width:5px;
-    height:5px;
-    background-color:rgb(240,243,197);
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    margin-right: 3px;
-    z-index: 2;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(240, 243, 197);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-right: 3px;
+  z-index: 2;
 }
 
-.over_words::after{
-    display: block;
-    content: " ";
-    @include relativeSize(8,64);
-    background-color:rgba(159, 195,217,0.5);
-    position: relative;
-    top: -3px;
-    left: -2px;
+.over_words::after {
+  display: block;
+  content: " ";
+  @include relativeSize(8, 64);
+  background-color: rgba(159, 195, 217, 0.5);
+  position: relative;
+  top: -3px;
+  left: -2px;
 }
