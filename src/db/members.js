@@ -1,7 +1,7 @@
 export default [
   {
     tag: "后端",
-    logo: "http://p9j8ahs4w.bkt.clouddn.com/mobile_site/member-backend.png",
+    logo: "http://peo10a3do.bkt.clouddn.com/mobile_site/member-backend.png",
     people: [
       {
         year: 2015,
@@ -84,7 +84,7 @@ export default [
   },
   {
     tag: "前端",
-    logo: "http://p9j8ahs4w.bkt.clouddn.com/mobile_site/member-frontend.png",
+    logo: "http://peo10a3do.bkt.clouddn.com/mobile_site/member-frontend.png",
     people: [
       {
         year: 2013,
@@ -182,7 +182,7 @@ export default [
   },
   {
     tag: "设计",
-    logo: "http://p9j8ahs4w.bkt.clouddn.com/mobile_site/member-design.png",
+    logo: "http://peo10a3do.bkt.clouddn.com/mobile_site/member-design.png",
     people: [
       {
         year: 2012,
@@ -293,7 +293,7 @@ export default [
 
   {
     tag: "产品",
-    logo: "http://p9j8ahs4w.bkt.clouddn.com/mobile_site/member-product.png",
+    logo: "http://peo10a3do.bkt.clouddn.com/mobile_site/member-product.png",
     people: [
       {
         year: 2014,
@@ -345,6 +345,7 @@ export default [
 
   {
     tag: "安卓",
+    logo: "http://peo10a3do.bkt.clouddn.com/mobile_site/member-android.png",
     people: [
       {
         year: 2012,

@@ -24,13 +24,22 @@
 }
 
 .triangle {
-  @include relativeSize(25, 52);
+  height: 15px;
+  width: 52 / 720 * 100vw;
+  padding: 3px 0;
+  border-top: 3px solid rgb(253, 255, 220);
+  border-bottom: 3px solid rgb(253, 255, 220);
+
+  // @include relativeSize(25, 52);
   margin: 0 auto;
   background-color: rgb(253, 255, 220);
-  padding: 5 / 1230 * 100vh 0;
-  border-top: 5 / 1230 * 100vh solid rgb(253, 255, 220);
-  border-bottom: 5 / 1230 * 100vh solid rgb(253, 255, 220);
+  // padding: 5 / 1230 * 100vh 0;
+  // border-top: 5 / 1230 * 100vh solid rgb(253, 255, 220);
+  // border-bottom: 5 / 1230 * 100vh solid rgb(253, 255, 220);
   background-clip: content-box;
+  -moz-background-clip: content-box;
+  -webkit-background-clip: content-box;
+  -o-background-clip: content-box;
 
   // height: 5px;
   // width: 53px;

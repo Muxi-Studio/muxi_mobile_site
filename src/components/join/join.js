@@ -1,7 +1,6 @@
 import { h, render, Component } from "preact";
 import "./join.scss";
 
-
 export default class Join extends Component {
   constructor(props) {
     super();
@@ -17,11 +16,10 @@ export default class Join extends Component {
   render({}, {}) {
     return (
       <div>
-     
         <div ondragstart="return false" className="join-web">
           <div className="background-img">
             <img
-              src= {"http://p9j8ahs4w.bkt.clouddn.com/mobile_site/join-star.png"}
+              src={"http://peo10a3do.bkt.clouddn.com/mobile_site/join-star.png"}
               className="background-star"
               ref={img => {
                 this.img = img;
@@ -35,7 +33,7 @@ export default class Join extends Component {
               className="background-button-inner"
               onClick={this.handleJoin.bind(this)}
             /> */}
-            <p className = "join-words">加入我们</p>
+            <p className="join-words">加入我们</p>
           </div>
         </div>
       </div>

@@ -50,28 +50,21 @@ export default class Member extends Component {
     return scrollHeight;
   }
   handleTouchEnd() {
-    // let scrollT = scrollT = document.documentElement.scrollTop || document.body.scrollTop;
-    // let scrollH = document.documentElement.scrollHeight || document.body.scrollHeight;
-    // let clientH = document.documentElement.clientHeight || document.body.clientHeight;
-    // if (scrollT == scrollH - clientH) {
-    //     console.log("到底部了");
-    //     } else if (scrollT < scrollH - clientH) {
-    //     console.log("到顶了")
-    //     }
-    // console.log(this.getScrollHeight());
-    // console.log(this.getWindowHeight() + this.getDocumentTop())
+    let scrollT = (scrollT =
+      document.documentElement.scrollTop || document.body.scrollTop);
+    let scrollH =
+      document.documentElement.scrollHeight || document.body.scrollHeight;
+    let clientH =
+      document.documentElement.clientHeight || document.body.clientHeight;
+    if (scrollT == scrollH - clientH) {
+      this.props.appChangePage(-1);
+    }
 
-    let height = this.getWindowHeight() + this.getDocumentTop();
-
-    if (this.getScrollHeight() <= height) {
-      //    this.props.appChangePage(1);
-      //   console.log("+1");
-    } else if (
-      document.body.scrollTop == 0 &&
-      document.documentElement.scrollTop == 0
+    if (
+      this.getScrollHeight() <
+      this.getDocumentTop() + this.getWindowHeight() + 50
     ) {
-      // this.props.appChangePage(-1);
-      //   console.log(-1);
+      this.props.appChangePage(1);
     }
   }
   handleImgError() {
@@ -84,8 +77,8 @@ export default class Member extends Component {
         <div
           className="members_containner"
           ref={this.members_containenr}
-          // onTouchStart={this.handleTouchStart.bind(this)}
-          // onTouchMove={this.handleTouchMove.bind(this)}
+          // onTouchStart={this.handleTouchEnd.bind(this)}
+          //onTouchMove={this.handleTouchEnd.bind(this)}
           onTouchEnd={this.handleTouchEnd.bind(this)}
         >
           {data.map(m => {

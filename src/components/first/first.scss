@@ -148,7 +148,7 @@ $borderW: 6px;
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-total-background.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-total-background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -157,7 +157,7 @@ $borderW: 6px;
   opacity: 1;
   position: absolute;
   top: 167 / 700 * 100vh;
-  @include relativeSize(113,720);
+  @include relativeSize(113, 720);
   // width: 100vw;
   // height: 113 / 1230 *100vh;
   display: flex;
@@ -167,7 +167,6 @@ $borderW: 6px;
 }
 
 .first-left-cloud {
- 
   @keyframes leftcloud {
     50% {
       transform: translateX(5vw);
@@ -200,16 +199,16 @@ $borderW: 6px;
     0s,
     normal
   );
-  @include relativeSize(118,180);
- 
+  @include relativeSize(118, 180);
+
   //  margin-left: -336 / 1280 * 100vw;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-left-cloud.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-left-cloud.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .first-right-cloud {
-  @include relativeSize(125,228);
+  @include relativeSize(125, 228);
   margin-left: 50vw;
   @keyframes rightcloud {
     50% {
@@ -217,12 +216,11 @@ $borderW: 6px;
     }
     100% {
       transform: translateX(0vw);
- 
     }
   }
   @-moz-keyframes rightcloud {
-    50%{
-      -moz-transform:translateX(-5vw);
+    50% {
+      -moz-transform: translateX(-5vw);
     }
     100% {
       -moz-transform: translateX(0vw);
@@ -234,9 +232,7 @@ $borderW: 6px;
     }
     100% {
       -webkit-transform: translateX(0vw);
- 
     }
-   
   }
   @include anim(
     rightcloud,
@@ -247,7 +243,7 @@ $borderW: 6px;
   );
   // width: 259/1280 * 100vw;
   // height: 332/700 * 100vh;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-right-cloud.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-right-cloud.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -255,7 +251,7 @@ $borderW: 6px;
 .first-center-words {
   width: 100%;
   height: 157px;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-center-words.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-center-words.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -315,7 +311,7 @@ $borderW: 6px;
   );
   height: 700px;
   width: 100%;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-gray-trees.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-gray-trees.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -344,20 +340,20 @@ $borderW: 6px;
     forwards
   );
   margin-bottom: -5vh;
-  @include relativeSize(200,750);
+  @include relativeSize(200, 750);
   position: absolute;
   bottom: 0vh;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-green-trees.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-green-trees.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .first-bottom-prond {
-  @include relativeSize(200,750);
+  @include relativeSize(200, 750);
   position: absolute;
   bottom: 0;
-  background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/first-buttom-pond.png");
+  background-image: url("http://peo10a3do.bkt.clouddn.com/mobile_site/first-buttom-pond.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
