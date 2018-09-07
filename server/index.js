@@ -12,6 +12,7 @@ const templateRoot = path.join(__dirname, "../dist/templates");
 
 app.use(userAgent);
 app.use(compression());
+
 router.get(/^\/static(?:\/|$)/, async ctx => {
   let filepath = ctx.path.replace(/static\//, "");
   await send(ctx, filepath, {

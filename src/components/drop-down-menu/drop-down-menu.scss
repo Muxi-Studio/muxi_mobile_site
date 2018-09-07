@@ -10,19 +10,18 @@
 // }
 
 .drop-down-menu-container {
- 
-   position:fixed;
-   @include relativeSize(450, 720);
-    z-index: 9;
+  position: fixed;
+  @include relativeSize(450, 720);
+  z-index: 9;
   .drop-down-menu-ul {
-    background-color: rgb(32,53,60);
+    background-color: rgb(32, 53, 60);
     @include relativeSize(450, 720);
     list-style: none;
-    @include relativePosition(absolute, 0 , 100);
+    @include relativePosition(fixed, 0, 100);
+    //  margin-top: 100 / 1230*100vh;
     @include relativeFontSize(34);
   }
   .drop-down-menu-li {
-   
     padding: 4vh 0 0 5vw;
     color: rgb(245, 251, 220);
   }
