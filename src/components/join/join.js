@@ -27,12 +27,10 @@ export default class Join extends Component {
             />
           </div>
 
-          <div className="background-button">
-            {/* <img
-              src="https://occc3ev3l.qnssl.com/index_site/join_button.png"
-              className="background-button-inner"
-              onClick={this.handleJoin.bind(this)}
-            /> */}
+          <div
+            className="background-button"
+            onClick={this.handleJoin.bind(this)}
+          >
             <p className="join-words">加入我们</p>
           </div>
         </div>

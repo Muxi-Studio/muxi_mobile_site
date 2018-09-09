@@ -5,61 +5,58 @@
 @import "../../styles/colors.scss";
 .products-innercontainer {
   height: 100vh;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
-.product-img-containner{
+.product-img-containner {
   // flex:588;
-  margin-top: 113 / 1280 *100vh
+  margin-top: 113 / 1280 * 100vh;
 }
-.product-img{
-
+.product-img {
   @include relativeSize(596, 618);
   // background-repeat: no-repeat;
   // background-position: center;
   // background-size: contain;
   // background-image: url("http://p9j8ahs4w.bkt.clouddn.com/mobile_site/product-xiazi.png");
 }
-.product-center-intro{
+.product-center-intro {
   // flex:150;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
-.product-name{
-  margin-top:26 / 1230 * 100vh;
+.product-name {
+  margin-top: 26 / 1230 * 100vh;
   @include relativeFontSize(47);
   font-weight: 800;
-  color: rgb(245,251,220);
+  color: rgb(245, 251, 220);
 }
 
-.product-type-containner{
- 
+.product-type-containner {
   margin-top: 20 / 1280 * 100vh;
   margin-bottom: 20 / 1280 * 100vh;
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
-.product-type-logo{
+.product-type-logo {
   // flex:1
-  @include relativeSize(30,30);
-  margin-right: 20 / 750 *100vw;
-
+  @include relativeSize(30, 30);
+  margin-right: 20 / 750 * 100vw;
 }
-.product-type{
+.product-type {
   // flex: 6;
-  color:$txt-yellow-color;
+  color: $txt-yellow-color;
   @include relativeFontSize(15);
-  
 }
-.product-intro{
-  margin-top:10 / 1230 * 100vh;
-  color: rgb(245,251,220);
+.product-intro {
+  margin-top: 10 / 1230 * 100vh;
+  color: rgb(245, 251, 220);
   width: 481 / 750 * 100vw;
   @include relativeFontSize(24);
+  line-height: 150%;
 }
