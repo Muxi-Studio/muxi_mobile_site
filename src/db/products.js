@@ -5,7 +5,7 @@ export default [
     intro: "华师学生专属利器，实时看课表，便捷查成绩，轻松扫除在校疑难杂症。",
     href: "https://ccnubox.muxixyz.com",
     img: "http://peo10a3do.bkt.clouddn.com/mobile_site/product-xiazi.png",
-    icon: "https://occc3ev3l.qnssl.com/index_site/icon_xiazi.png"
+    icon: "https://static.muxixyz.com/index_site/icon_xiazi.png"
   },
   {
     product: "学而",
@@ -13,7 +13,7 @@ export default [
     intro: "详细的课程分类与评价，助你轻松突破选课大关。",
     href: "https://xueer.muxixyz.com",
     img: "http://peo10a3do.bkt.clouddn.com/mobile_site/product-xuer.png",
-    icon: "https://occc3ev3l.qnssl.com/index_site/icon_xuer.png"
+    icon: "https://static.muxixyz.com/index_site/icon_xuer.png"
   },
   {
     product: "木小犀",
@@ -22,7 +22,7 @@ export default [
       "当Siri来到华师，它便是木小犀。无论你是遇到了难题还是空闲无聊，木小犀都能一呼即到。",
     href: "http://robot.muxixyz.com",
     img: "http://peo10a3do.bkt.clouddn.com/mobile_site/product-muxiaoxi.png",
-    icon: "https://occc3ev3l.qnssl.com/index_site/icon_robot.png"
+    icon: "https://static.muxixyz.com/index_site/icon_robot.png"
   },
   {
     product: "想法池",
@@ -31,7 +31,7 @@ export default [
       "在这里，你们负责天马行空，我们负责脚踏实地，填下你的想法，我们帮你实现。已有233人在此提出想法，你呢？",
     href: "http://cn.mikecrm.com/eZ3MyWA",
     img: "http://peo10a3do.bkt.clouddn.com/mobile_site/product-thoughts.png",
-    icon: "https://occc3ev3l.qnssl.com/index_site/icon_thinking.png"
+    icon: "https://static.muxixyz.com/index_site/icon_thinking.png"
   },
   {
     product: "木犀h5",
