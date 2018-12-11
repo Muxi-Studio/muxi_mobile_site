@@ -9,21 +9,19 @@ export default [
           {
             position: "二代目",
             name: "刘聪",
-            photo:
-              "http://7xrvvt.com1.z0.glb.clouddn.com/06CC00EB-CBA3-4DC9-B4F4-05AE0BCC66CF-10816-00000965F12D03B4_tmp.JPG",
+            photo: "https://static.muxixyz.com/muxisite/avartar/lc.png",
             intro: "今天不接任何需求= ="
           },
           {
             position: "组员",
             name: "区诗柔",
-            photo:
-              "http://ol8rotyvb.bkt.clouddn.com/55286A38B5BB942FEE2624905E252394.jpg",
+            photo: "https://static.muxixyz.com/muxisite/avartar/osr.jpeg",
             intro: "华南食人族"
           },
           {
             position: "组员",
             name: "梁秋实",
-            photo: "http://muxisite-avater.muxixyz.com/lqsphoto.png",
+            photo: "https://static.muxixyz.com/muxisite/avartar/lqs.jpeg",
             intro: "Carpe diem."
           }
         ]
@@ -34,13 +32,13 @@ export default [
           {
             position: "组长",
             name: "张可",
-            photo: "http://muxisite-avater.muxixyz.com/motty.jpg",
+            photo: "https://static.muxixyz.com/muxisite/avartar/zk.jpeg",
             intro: "DON'T PANIC"
           },
           {
             position: "首席教育官",
             name: "余依蕾",
-            photo: "http://muxisite-avater.muxixyz.com/109951163040838276.jpg",
+            photo: "https://static.muxixyz.com/muxisite/avartar/yyl.jpeg",
             intro: "介绍加载失败..."
           },
           {
@@ -384,8 +382,7 @@ export default [
           {
             position: "卫生部长",
             name: "底衫不二",
-            photo:
-              "http://oe90x7ww9.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%A4%B4%E5%83%8F.jpg",
+            photo: "https://static.muxixyz.com/muxisite/avartar/xy.jpeg",
             intro: "我已经决定吃自己喜欢的东西,过短命的人生了"
           }
         ]
