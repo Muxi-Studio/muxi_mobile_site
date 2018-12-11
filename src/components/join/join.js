@@ -19,7 +19,7 @@ export default class Join extends Component {
         <div ondragstart="return false" className="join-web">
           <div className="background-img">
             <img
-              src={"http://peo10a3do.bkt.clouddn.com/mobile_site/join-star.png"}
+              src={"http://test-sdk.muxixyz.com/mobile_site/join-star.png"}
               className="background-star"
               ref={img => {
                 this.img = img;

@@ -43,7 +43,7 @@ export default class Header extends Component {
           <div className="header-logo">
             <img
               className="header-logo-pic"
-              src={"http://p9j8ahs4w.bkt.clouddn.com/mobile_site/logo.png"}
+              src={"http://test-sdk.muxixyz.com/mobile_site/logo.png"}
             />
           </div>
           <div className="header-title"> {title} </div>
