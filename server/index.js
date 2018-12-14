@@ -8,12 +8,16 @@ const compression = require("koa-compress");
 const router = new Router();
 const app = new Koa();
 
-const templateRoot = path.join(__dirname, "../dist/templates");
+const templateRoot = path.join(
+  __dirname,
+  process.env.NODE_ENV === "development" ? "../templates" : "../dist/templates"
+);
 
 app.use(userAgent);
 app.use(compression());
 
 router.get(/^\/static(?:\/|$)/, async ctx => {
+  // process.env.NODE_ENV === 'development' 的时候，转发静态文件请求到 localhost:8080/dist 下
   let filepath = ctx.path.replace(/static\//, "");
   await send(ctx, filepath, {
     root: path.join(__dirname, "../dist")
