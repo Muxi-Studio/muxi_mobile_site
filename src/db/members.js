@@ -214,13 +214,6 @@ export default [
           },
           {
             position: "组员",
-            name: "王皖莹",
-            photo:
-              "http://muxisite-avater.muxixyz.com//frontend:wangwanying.jpg",
-            intro: "「好耶，是千千」"
-          },
-          {
-            position: "组员",
             name: "管云凤",
             photo:
               "http://muxisite-avater.muxixyz.com//frontend/guanyunfeng.jpg",
@@ -231,18 +224,19 @@ export default [
             name: "曾德勤",
             photo: "http://muxisite-avater.muxixyz.com//frontend/zengdeqin.jpg",
             intro: "求知若渴，求贤若愚"
+          },
+          {
+            position: "组员",
+            name: "王皖莹",
+            photo:
+              "http://muxisite-avater.muxixyz.com//frontend:wangwanying.jpg",
+            intro: "「好耶，是千千」"
           }
         ]
       },
       {
         year: 2017,
         member: [
-          {
-            position: "组员",
-            name: "季卓琦",
-            photo: "http://muxisite-avater.muxixyz.com//frontend/jizhuoqi.jpg",
-            intro: "一只梦想成为大佬的咸鱼"
-          },
           {
             position: "组员",
             name: "包欣雨",
@@ -254,6 +248,12 @@ export default [
             name: "王玉飞",
             photo: "http://muxisite-avater.muxixyz.com//frontend/wangyufei.jpg",
             intro: "荼靡易逝，苦蛊甘饴"
+          },
+          {
+            position: "组员",
+            name: "季卓琦",
+            photo: "http://muxisite-avater.muxixyz.com//frontend/jizhuoqi.jpg",
+            intro: "一只梦想成为大佬的咸鱼"
           }
         ]
       },
@@ -381,16 +381,16 @@ export default [
         year: 2015,
         member: [
           {
-            position: "老人",
-            name: "黄爱珠",
-            intro: "不介绍",
-            photo: "http://muxisite-avater.muxixyz.com//design/huangaizhu.png"
-          },
-          {
             position: "后勤务工",
             name: "张贝贝",
             intro: "默默啃小鱼干的中年张胖胖。",
             photo: "http://muxisite-avater.muxixyz.com//design/zhangbeibei.png"
+          },
+          {
+            position: "老人",
+            name: "黄爱珠",
+            intro: "不介绍",
+            photo: "http://muxisite-avater.muxixyz.com//design/huangaizhu.png"
           },
           {
             position: "法师",
@@ -450,12 +450,23 @@ export default [
             name: "龙星晔",
             photo: "http://muxisite-avater.muxixyz.com//design/longxingye.jpg",
             intro: "每天都要开心的小龙"
-          },
+          }
+        ]
+      },
+      {
+        year: 2018,
+        member: [
           {
             position: "组长",
             name: "谭航",
             photo: "http://muxisite-avater.muxixyz.com//design/tanhang.png",
             intro: "呜啦啦啦火车笛，随着奔腾的马蹄~"
+          },
+          {
+            position: "组员",
+            name: "张力丹",
+            photo: "http://muxisite-avater.muxixyz.com//design/rai.jpg",
+            intro: "努力不鸽"
           },
           {
             position: "组员",
@@ -469,17 +480,6 @@ export default [
             photo:
               "http://muxisite-avater.muxixyz.com//design/xiangshuyihan.jpg",
             intro: "努力做一只不咕鸟"
-          }
-        ]
-      },
-      {
-        year: 2018,
-        member: [
-          {
-            position: "组员",
-            name: "张力丹",
-            photo: "http://muxisite-avater.muxixyz.com//design/rai.jpg",
-            intro: "努力不鸽"
           }
         ]
       },
@@ -700,12 +700,6 @@ export default [
         member: [
           {
             position: "组员",
-            name: "彭敏悦",
-            photo: "http://muxisite-avater.muxixyz.com//android/pengminyuejpg",
-            intro: "做任何自己觉得有意义的事"
-          },
-          {
-            position: "组员",
             name: "王鹏宇",
             photo:
               "http://muxisite-avater.muxixyz.com//android/wangpengyu.jpeg",
@@ -716,6 +710,12 @@ export default [
             name: "赵弟发",
             photo: "http://muxisite-avater.muxixyz.com//android/zhaodifa.png",
             intro: "I am a slow walker , but i never walk backwards ."
+          },
+          {
+            position: "组员",
+            name: "彭敏悦",
+            photo: "http://muxisite-avater.muxixyz.com//android/pengminyuejpg",
+            intro: "做任何自己觉得有意义的事"
           }
         ]
       },
