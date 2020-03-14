@@ -15,11 +15,11 @@ const templateRoot = path.join(
 
 app.use(userAgent);
 app.use(compression());
-app.use((ctx, next) => {
+app.use(async (ctx, next) => {
   if (ctx.userAgent.isDesktop) {
     ctx.redirect("http://muxi-tech.xyz");
   } else {
-    next();
+    await next();
   }
 });
 
