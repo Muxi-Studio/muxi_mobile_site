@@ -16,6 +16,7 @@
 }
 .product-img {
   @include relativeSize(596, 618);
+  height: auto;
   // background-repeat: no-repeat;
   // background-position: center;
   // background-size: contain;
@@ -47,6 +48,7 @@
   // flex:1
   @include relativeSize(30, 30);
   margin-right: 20 / 750 * 100vw;
+  height: auto;
 }
 .product-type {
   // flex: 6;

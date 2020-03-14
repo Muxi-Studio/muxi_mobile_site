@@ -4,6 +4,7 @@
   "description": "",
   "main": "ninja.conf.js",
   "scripts": {
+    "start": " node ../ninja/src/bin/ninja start",
     "dev": "webpack-dev-server --config ./build/webpack.dev.conf.js",
     "build": "node ./build/build.js",
     "precommit": "pretty-quick --staged"

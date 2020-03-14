@@ -19,6 +19,7 @@
 .group_logo {
   flex: 1;
   @include relativeSize(112, 117);
+  height: auto;
 }
 .group_name {
   flex: 4;

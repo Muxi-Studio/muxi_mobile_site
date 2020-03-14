@@ -1,56 +1,46 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/colors.scss";
-.card_block{
-    overflow: auto;
-    //border-style:solid;
-    border-left: 1px solid rgb(245,251,220);
-    margin-left: 7 / 750 * 100vw;
-    padding-top: 12px;
-
-    
+.card_block {
+  overflow: auto;
+  //border-style:solid;
+  border-left: 1px solid rgb(245, 251, 220);
+  margin-left: 7 / 750 * 100vw;
+  padding-top: 12px;
 }
-.member_year_containner{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   // justify-content: space-between;
-    
-
+.member_year_containner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: space-between;
 }
 .member_year_dot {
-   
-    width:5px;
-    height:5px;
-    background-color:rgb(240,243,197);
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    margin-right: 3px;
-  
-    z-index: 2;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(240, 243, 197);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-right: 3px;
+
+  z-index: 2;
 }
-.member_year{
-   
-    @include relativeFontSize(17);
-    color:$txt-color;
-    
+.member_year {
+  font-size: 14px;
+  color: $txt-color;
 }
-.member_year::after{
-    display: block;
-    content: " ";
-    @include relativeSize(8,64);
-    background-color:rgba(159, 195,217,0.5);
-    position: relative;
-    top: -3px;
-    left: -2px;
+.member_year::after {
+  display: block;
+  content: " ";
+  @include relativeSize(8, 64);
+  background-color: rgba(159, 195, 217, 0.5);
+  position: relative;
+  top: -3px;
+  left: -2px;
 }
 
-.member_cards_containner{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    // justify-content: space-between;
-
+.member_cards_containner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: space-between;
 }

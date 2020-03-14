@@ -18,15 +18,18 @@
 //     margin-bottom: 2vh;
 // }
 .intro_card_photo_containner {
-  height: 120 / 1230 * 100vh;
+  max-height: 90 / 1230 * 100vh;
 
   margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 .intro_card_photo {
   @include relativeSize(112, 114);
   display: block;
 
   border-radius: 50%;
+  height: auto;
 }
 .intro_card_name {
   margin-top: 9 / 1230 * 100vh;

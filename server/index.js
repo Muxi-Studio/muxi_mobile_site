@@ -15,6 +15,13 @@ const templateRoot = path.join(
 
 app.use(userAgent);
 app.use(compression());
+app.use((ctx, next) => {
+  if (ctx.userAgent.isDesktop) {
+    ctx.redirect("http://muxi-tech.xyz");
+  } else {
+    next();
+  }
+});
 
 router.get(/^\/static(?:\/|$)/, async ctx => {
   // process.env.NODE_ENV === 'development' 的时候，转发静态文件请求到 localhost:8080/dist 下

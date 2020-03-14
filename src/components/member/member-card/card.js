@@ -25,9 +25,7 @@ export default class Card extends Component {
             />
           </div>
           <div className="intro_card_name">姓名:{props.info.name}</div>
-          <div className="intro_card_introduction">
-            座右铭：{props.info.intro}
-          </div>
+          <div className="intro_card_introduction">{props.info.intro}</div>
         </div>
       </div>
     );

@@ -11,7 +11,6 @@ export default [
     product: "学而",
     type: "Web应用",
     intro: "详细的课程分类与评价，助你轻松突破选课大关。",
-    href: "https://xueer.muxixyz.com",
     img: "http://test-sdk.muxixyz.com/mobile_site/product-xuer.png",
     icon: "https://static.muxixyz.com/index_site/icon_xuer.png"
   },
@@ -20,7 +19,6 @@ export default [
     type: "Web应用",
     intro:
       "当Siri来到华师，它便是木小犀。无论你是遇到了难题还是空闲无聊，木小犀都能一呼即到。",
-    href: "http://robot.muxixyz.com",
     img: "http://test-sdk.muxixyz.com/mobile_site/product-muxiaoxi.png",
     icon: "https://static.muxixyz.com/index_site/icon_robot.png"
   },
@@ -29,7 +27,6 @@ export default [
     type: "Web应用",
     intro:
       "在这里，你们负责天马行空，我们负责脚踏实地，填下你的想法，我们帮你实现。已有233人在此提出想法，你呢？",
-    href: "http://cn.mikecrm.com/eZ3MyWA",
     img: "http://test-sdk.muxixyz.com/mobile_site/product-thoughts.png",
     icon: "https://static.muxixyz.com/index_site/mobile_site/icon_thinking.png"
   },
